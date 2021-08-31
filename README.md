@@ -1,17 +1,17 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/7olahkndcs3r295p/branch/indev?svg=true)](https://ci.appveyor.com/project/MythicManiac/gameserver/branch/indev)
 [![Build Status](https://travis-ci.org/LeagueSandbox/GameServer.svg?branch=indev)](https://travis-ci.org/LeagueSandbox/GameServer)
 [![codecov.io](https://codecov.io/github/LeagueSandbox/GameServer/coverage.svg?branch=indev)](https://codecov.io/github/LeagueSandbox/GameServer?branch=indev)
-# The League Sandbox project's game server
-Project website along with more specifications can be found from: https://leaguesandbox.github.io/  
-Project chat on Discord: https://discord.gg/Bz3znAM
+# League Sandbox 联盟沙盒项目游戏服务器(中国开发者)
+项目官方网站及更多技术细节: https://leaguesandbox.github.io/  
+项目官方Discord: https://discord.gg/Bz3znAM
 
-# Contributing
+# 代码贡献
 
-Take a look at [this](https://github.com/LeagueSandbox/GameServer/blob/indev/CONTRIBUTING.md)
+参照 [此处](https://github.com/LeagueSandbox/GameServer/blob/indev/CONTRIBUTING.md)
 
-# Setup guide
-* Install Microsoft Visual Studio 2019 or newer (Community Edition is fine)
-* Install latest .NET Framework and Core (VS Installer should let you do that, otherwise check [here](https://dotnet.microsoft.com/download/dotnet-framework) for Framework, and [here](https://dotnet.microsoft.com/download/dotnet-core) for Core)
+# 快速开始指南
+* 安装 Microsoft Visual Studio 2019 或更新版本 (不限社区版/专业版)
+* 安装最新版本的 .NET Framework 和 Core (VS Installer should let you do that, otherwise check [here](https://dotnet.microsoft.com/download/dotnet-framework) for Framework, and [here](https://dotnet.microsoft.com/download/dotnet-core) for Core)
 * Install Editor Guidelines (https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459)
 	* This is strongly encouraged to follow the 120 character limit per line guideline
 	
