@@ -11,68 +11,68 @@
 
 # 快速开始指南
 * 安装 Microsoft Visual Studio 2019 或更新版本 (不限社区版/专业版)
-* 安装最新版本的 .NET Framework 和 Core (VS Installer should let you do that, otherwise check [here](https://dotnet.microsoft.com/download/dotnet-framework) for Framework, and [here](https://dotnet.microsoft.com/download/dotnet-core) for Core)
-* Install Editor Guidelines (https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459)
-	* This is strongly encouraged to follow the 120 character limit per line guideline
+* 安装最新版本的 .NET Framework 和 Core (VS Installer默认应该会安装, 如果没有请参照 [此处](https://dotnet.microsoft.com/download/dotnet-framework) 来安装.NET Framework, 以及 [此处](https://dotnet.microsoft.com/download/dotnet-core) 安装 .NET Core)
+* 源代码文件缩进及换行 (https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459)
+	* 每行代码不应超过120字符
 	
-### Auto Setup (Windows x64)
-* Download and run [League Sandbox Auto Setup](https://github.com/LeagueSandbox/LeagueSandboxAutoSetup/releases/download/v1.1/League.Sandbox.Auto.Setup.exe) 
+### 客户端安装程序 (Windows x64)
+* 下载并运行 [League Sandbox Auto Setup](https://github.com/LeagueSandbox/LeagueSandboxAutoSetup/releases/download/v1.1/League.Sandbox.Auto.Setup.exe) 
 [[Source]](https://github.com/LeagueSandbox/LeagueSandboxAutoSetup/archive/v1.1.zip)
 [[Mirror]](https://github.com/LeagueSandbox/LeagueSandboxAutoSetup/archive/v1.1.tar.gz)
-* Build and run
-* If having trouble, follow the Manual Setup below
+* 构建并运行
+* 如果安装程序无法自动完成操作请参照下面的 手动安装客户端 环节
 		
-### Manual Setup (Windows/Mac)
-* Download the 4.20 version of League game client:
-	1. [Unscrubbed, packed version](https://mega.nz/#!hpkiQK5A!pFkZJtxCMQktJf4umplAdPC_Fukt0xgMfO7g3bGp1Io)
-	2. [Scrubbed, moddable version](https://drive.google.com/file/d/1JVUGe75nMluczrY14xb0KDXiihFRlGnV)
-* For running the git commands below, [Git Bash](https://gitforwindows.org/) is recommended
-* Clone the git repository using ```git clone https://github.com/LeagueSandbox/GameServer.git```, then to download the necessary contents packages, run:
+### 手动安装客户端 (Windows/Mac)
+* 下载 4.20 版本的英雄联盟客户端:
+	1. [未解包版本](https://mega.nz/#!hpkiQK5A!pFkZJtxCMQktJf4umplAdPC_Fukt0xgMfO7g3bGp1Io)
+	2. [已解包，可编辑游戏文件版本](https://drive.google.com/file/d/1JVUGe75nMluczrY14xb0KDXiihFRlGnV)
+* 推荐使用 [Git Bash](https://gitforwindows.org/) 运行下列 git 指令
+* 使用 ```git clone https://github.com/LeagueSandbox/GameServer.git``` 拉取仓库, 然后执行以下内容下载必要的内容库:
 	* ```cd GameServer```
 	* ```git submodule init```
 	* ```git submodule update```
-* Open the GameServer Solution in VS, set the platform to x86, Build, and run.
+* 在 VS 中打开 GameServer 解决方案, 将平台设置为 x86, 生成解决方案并运行.
 
 
-### Manual Setup (Linux)
-* Download the 4.20 version of League game client:
-	1. [Unscrubbed, packed version](https://mega.nz/#!hpkiQK5A!pFkZJtxCMQktJf4umplAdPC_Fukt0xgMfO7g3bGp1Io)
-	2. [Scrubbed, moddable version](https://drive.google.com/file/d/12sWXWPQdTDIpNTJMOygC61zS7DnoFLfy)
-* Install git and dotnet (dotnet-host, dotnet-runtime, dotnet-sdk, dotnet-targeting-pack) using your distro's package manager
-* Clone the git repository using ```git clone https://github.com/LeagueSandbox/GameServer.git```, then to download the necessary contents packages, run:
+### 手动安装客户端 (Linux)
+* 下载 4.20 版本的英雄联盟客户端:
+	1. [未解包版本](https://mega.nz/#!hpkiQK5A!pFkZJtxCMQktJf4umplAdPC_Fukt0xgMfO7g3bGp1Io)
+	2. [已解包，可编辑游戏文件版本](https://drive.google.com/file/d/1JVUGe75nMluczrY14xb0KDXiihFRlGnV)
+* 使用你的 Linux发行版 提供的软件包管理工具安装 git 与 dotnet 相关包 (dotnet-host, dotnet-runtime, dotnet-sdk, dotnet-targeting-pack)
+* 使用 ```git clone https://github.com/LeagueSandbox/GameServer.git``` 拉取仓库, 然后执行以下内容下载必要的内容库:
 	* ```cd GameServer```
 	* ```git submodule init```
 	* ```git submodule update```
-* Build the server by running ```dotnet build .```
-* Enter the output directory by running ```cd GameServerConsole/bin/Debug/netcoreapp3.0/```
-* Open ```Settings/GameInfo.json``` and change ```"CONTENT_PATH": "../../../../../Content"``` to ```"CONTENT_PATH": "../../../../Content"```
-* Open ```Settings/GameServerSettings.json``` and change ```"autoStartClient": true``` to ```false```
-* Start the server: ```./GameServerConsole```
+* 使用 ```dotnet build .``` 构建服务器
+* 进入构建文件夹 ```cd GameServerConsole/bin/Debug/netcoreapp3.0/```
+* 打开 ```Settings/GameInfo.json``` 并修改 ```"CONTENT_PATH": "../../../../../Content"``` 为 ```"CONTENT_PATH": "../../../../Content"```
+* 打开 ```Settings/GameServerSettings.json``` 并修改 ```"autoStartClient": true``` 为 ```"autoStartClient": false```
+* 运行服务端 ```./GameServerConsole```
 
-# Running the game client
+# 运行游戏客户端
 
-#### Automatically Launching from Visual Studio or GameServerConsole.exe
-Click the debug button.
-> Auto run settings are located in `GameServer/GameServerConsole/bin/Debug/netcoreapp3.0/Settings/GameServerSettings.json`, there is where you'll set the path to your League of Legends' deploy folder, which shown by the example already in the file.
+#### 由 Visual Studio 或 GameServerConsole.exe 自动运行
+点击 本地调试运行.
+> 自动运行相关的配置文件将被生成为 `GameServer/GameServerConsole/bin/Debug/netcoreapp3.0/Settings/GameServerSettings.json`, 该文件包含了一个 英雄联盟 的 deploy 文件夹示例.
 
-#### Manually Launching from command line
+#### 使用命令行来运行
 ```
 cd "Path/To/Your/League420/RADS/solutions/lol_game_client_sln/releases/0.0.1.68/deploy/"
 start "" "League of Legends.exe" "" "" "" "127.0.0.1 5119 17BLOhi6KZsTtldTsizvHg== 1"
 ```
 
-#### Manually Launching from command line (Linux)
-* Install wine and winetricks using your package manager.
-* Run ```winetricks d3dx9``` - without this you will get into the game, but your screen will be black.
-* Mark .exe files executable by running ```find . -type f -iname "*.exe" -exec chmod +x {} \;``` in your League-of-Legends-4-20 directory.
-* Enter the directory containing the client by running ```cd /path/to/your/League-of-Legends-4-20/RADS/solutions/lol_game_client_sln/releases/0.0.1.68/deploy/```
-* Run the game:
+#### 使用命令行来运行 (Linux)
+* 使用你的 Linux发行版 提供的软件包管理工具安装 wine.
+* 执行 ```winetricks d3dx9``` - 若不执行, 你仍然能进入游戏, 但游戏会处于黑屏状态
+* 在你的 League-of-Legends-4-20 中执行 ```find . -type f -iname "*.exe" -exec chmod +x {} \;``` 来讲所有的 .exe 文件设置为可执行.
+* 执行 ```cd /nide/yxlm/youxi/lujing/League-of-Legends-4-20/RADS/solutions/lol_game_client_sln/releases/0.0.1.68/deploy/``` 切换至 英雄联盟 的游戏目录
+* 运行游戏:
 
 ```
 ./League\ of\ Legends.exe "" "" "" "127.0.0.1 5119 17BLOhi6KZsTtldTsizvHg== 1"
 ```
 
-# License
+# 许可协议
 
-This repository is under the [AGPL-3.0](LICENSE) license.
-This essentially means that all changes that are made on top of this repository are required to be made public, regardless of where the code is being ran.
+此仓库使用 [AGPL-3.0](LICENSE) 许可协议.
+此仓库的所有代码必须被开源, 无论它在何处运行.
