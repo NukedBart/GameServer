@@ -158,3 +158,6 @@ Issue 的状态.
 | S-verified | Issue 确实存在诶 |
 | S-wont-fix | 我就是不修 |
 | invalid | 刷屏了啊 |
+
+# P.S. 译者的话
+buff列表在 [这里](https://github.com/NukedBart/GameServer/buffs.md)
