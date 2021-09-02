@@ -1,6 +1,6 @@
-# Contributing
-We're looking for people interested in contributing to the project.  
-Currently the technologies we use include:
+# 代码贡献
+我们现在正在寻找有兴趣贡献此项目的人.  
+我面现在需要以下领域的程序员:
 * C#
 * Python
 * Electron
@@ -8,41 +8,41 @@ Currently the technologies we use include:
 * Angular
 * Socket.io
 
-For more detailed project specifications head over to https://leaguesandbox.github.io/  
-If you're interested in contributing, come find us from [Discord](https://discord.gg/0vmmZ6VAwXB05gB6) and let us know.
+有关项目的更多信息请导航至 https://leaguesandbox.github.io/  
+如有贡献想法，请加入 [Discord](https://discord.gg/0vmmZ6VAwXB05gB6) 或 QQ群 216683185.
 
 # Pull requests
 
-All contributors must sign a CLA (Contributor License Agreement) before pull requests can be merged. This will be handled by a bot on the pull request, and the goal is to to ensure the changes being properly transformed to AGPL-3.0 which the project is licensed under.
+所有贡献者在 Pull request 被合并前必须签署 CLA (Contributor License Agreement, 贡献者许可协议). 这将会被 Pull request 的相关机器人接管, 以取保贡献的代码会合法使用 AGPL-3.0 协议.
 
-# Commits
+# 代码提交
 
-## An issue should be always created before committing
+## 在提交前必须发表对应的 Issue
 
-All commits should refer to issues. This is simply so that we can better track what is being worked on or what should be worked on.
+所有的提交必须有其对应的 issue. 以便于我们追踪该提交解决的问题与将会带来的问题.
 
-## Commit Structure:
+## 代码提交模板:
 ```
-Issue Reference -- Title of the commit
+解决 Issue 引用 -- 提交标题
 
-Description of the commit
+提交简介
 
-Issue reference
+相关 Issue 引用
 ```
-For example:
+例如:
 ```
-Resolve #123 -- Implement a foobar
+解决 #123 问题 -- 实现 foo
 
-Implement foo to the bar module
+实现了 foo
 
-Refs #123
+相关 #123
 ```
 
-You can also use `Progress` in place of `Resolve`, in case the issue was not resolved yet.
+你也可以使用 `进步` 而非 `解决` 一个 Issue, 以应对无法完全解决 Issue 的情况.
 
-**THIS GUIDE CONCERNS _COMMIT_ MESSAGES, AND NOT _PULL REQUEST_ MESSAGES**
-# Project policies
-* Line length should be 120 characters maximum whenever possible (use Editor Guidelines plugin for a ruler)
+**下面的向导是有关 _代码提交_ 信息的, 不是 _PULL REQUEST_ 信息！**
+# 项目规则
+* 每行的代码长度必须小于120个字符 (使用 Editor Guidelines 插件可以更好地帮助你追踪此问题)
 * Pull requests must be approved before they can be merged
 * Pull requests should not be merged before the build has passed
     * If the build fails, ping the pull request creator and tell him to fix it
