@@ -12,7 +12,7 @@
 # 快速开始指南
 * 安装 Microsoft Visual Studio 2019 或更新版本 (不限社区版/专业版)
 * 安装最新版本的 .NET Framework 和 Core (VS Installer默认应该会安装, 如果没有请参照 [此处](https://dotnet.microsoft.com/download/dotnet-framework) 来安装.NET Framework, 以及 [此处](https://dotnet.microsoft.com/download/dotnet-core) 安装 .NET Core)
-* 源代码文件缩进及换行 (https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459)
+* Editor Guidelines 插件 (https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459)
 	* 每行代码不应超过120字符
 	
 ### 客户端安装程序 (Windows x64)
