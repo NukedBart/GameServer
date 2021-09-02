@@ -160,4 +160,4 @@ Issue 的状态.
 | invalid | 刷屏了啊 |
 
 # P.S. 译者的话
-buff列表在 [这里](https://github.com/NukedBart/GameServer/blob/indev/buffs.md)
+buff列表在 [这里](https://github.com/NukedBart/GameServer/blob/indev/buff.md)
