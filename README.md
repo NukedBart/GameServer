@@ -7,7 +7,7 @@
 
 # 代码贡献
 
-参照 [此处](https://github.com/LeagueSandbox/GameServer/blob/indev/CONTRIBUTING.md)
+参照 [此处](https://github.com/NukedBart/GameServer/blob/indev/CONTRIBUTING.md)
 
 # 快速开始指南
 * 安装 Microsoft Visual Studio 2019 或更新版本 (不限社区版/专业版)
